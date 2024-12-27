@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🎶 Music Box</h1>
+        <h2> A virtual space for everything music—discover songs, create playlists, and much more </h2>
+        <div class="search-container">
+            <input type="text" id="search-music" placeholder="Search music..." />
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="left-side">
+            <form id="add-music-form">
+                <input type="text" id="music-title" placeholder="Music Title" required />
+                <input type="number" id="music-year" placeholder="Year" required />
+                <input type="text" id="music-singer" placeholder="Singer" required />
+                <button type="submit">Add Music</button>
+            </form>
+        </div>
+
+        <div class="right-side">
+            <div id="music-list"></div>
+            <div id="pagination"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Created by: Muhammad Fatieh Akram Faritshi</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
